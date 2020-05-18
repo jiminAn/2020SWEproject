@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='reading_group_management_app'
