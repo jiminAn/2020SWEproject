@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/new_group_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/navy"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="그룹 생성"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:background="@color/navy"
+        android:layout_centerVertical="true"
+        >
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/backbutton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+
+    </ImageView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/new_group_top_bar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_below="@id/new_group_top_bar"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="그룹이름"></EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:hint="그룹소개(100자 내외)"></EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="태그"></EditText>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="모집 연령대"></TextView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp">
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/agecheckboxall"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="전 연령대 모집">
+
+                </androidx.appcompat.widget.AppCompatCheckBox>
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/agecheckbox20"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/agecheckboxall"
+                    android:text="20대">
+
+                </androidx.appcompat.widget.AppCompatCheckBox>
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/agecheckbox30"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/agecheckboxall"
+                    android:layout_alignParentRight="true"
+                    android:text="30대">
+
+                </androidx.appcompat.widget.AppCompatCheckBox>
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/agecheckbox40"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/agecheckbox20"
+                    android:text="40대">
+
+                </androidx.appcompat.widget.AppCompatCheckBox>
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/agecheckbox50"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/agecheckbox20"
+                    android:layout_alignParentRight="true"
+                    android:text="50대 이상">
+
+                </androidx.appcompat.widget.AppCompatCheckBox>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="성별제한없음"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="남자만 모집"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="여자만 모집"></TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="최대인원"></EditText>
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/autoregistercheck"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="가입자동승인">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+
+        </LinearLayout>
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:text="그룹 생성하기"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:background="@drawable/btn_makegroup"
+            android:gravity="center"
+            android:layout_gravity="center">
+        </Button>
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "62306989180",
+    "firebase_url": "https://readinggroupapp-17e63.firebaseio.com",
+    "project_id": "readinggroupapp-17e63",
+    "storage_bucket": "readinggroupapp-17e63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62306989180:android:f83591e180e01e1228c5f9",
+        "android_client_info": {
+          "package_name": "com.example.reading_group_management_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62306989180-im2c9fhs5lu982p02e080k455l0jof89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJNMMpYaDDuL7N_aQGEWREMENLEhI96JA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62306989180-im2c9fhs5lu982p02e080k455l0jof89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
