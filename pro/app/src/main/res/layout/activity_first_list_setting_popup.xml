@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".first_list_setting_popup">
+
+    <Button
+        android:id="@+id/vote_date"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:text="일정"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <Button
+        android:id="@+id/vote_location"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:text="장소"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vote_date"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <Button
+        android:id="@+id/vote_book"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:text="책"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vote_location"
+        app:layout_constraintVertical_bias="0.050" />
+
+    <Button
+        android:id="@+id/acuu"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:text="발제신청"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vote_book"
+        app:layout_constraintVertical_bias="0.050" />
+
+    <Button
+        android:id="@+id/cancel_firs_list_seting_popup"
+        android:layout_width="103dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:text="cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acuu" />
+
+    <Button
+        android:id="@+id/commit_first_list_seting_popup"
+        android:layout_width="103dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acuu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

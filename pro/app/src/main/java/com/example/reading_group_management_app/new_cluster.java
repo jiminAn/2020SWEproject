@@ -58,10 +58,7 @@ public class new_cluster extends AppCompatActivity {
         Map<String, Object> userValue = m.toMap();
 
 
-        mDBReference.child("tbl_group").child(m.getId()).setValue(null);
-
-
-
+        mDBReference.child("tbl_").child(m.getId()).setValue(null);
 
 
     }
