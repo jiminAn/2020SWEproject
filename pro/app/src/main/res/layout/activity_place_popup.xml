@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".place_popup">
+    <TableLayout
+        android:id="@+id/vote_date_table"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/place_table_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#E6DDDD"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="NO."
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/place_table_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#E6DDDD"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="장소"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/place_table_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#E6DDDD"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="추천 "
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/place_table_row_no1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/place_table_row_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="신촌"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/place_table_row_like1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="10"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/place_table_row_no2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="2"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/place_table_row_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="종각"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/place_table_row_like2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="20"
+                android:textSize="20dp" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/place_new_add_button"
+        android:layout_width="234dp"
+        android:layout_height="58dp"
+        android:text="+ 새 장소 추가하기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vote_date_table"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <TextView
+        android:id="@+id/place_vote_main"
+        android:layout_width="196dp"
+        android:layout_height="50dp"
+        android:background="#AEA5A5"
+        android:gravity="center"
+        android:text="장소"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/vote_date_table"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/place_popup_Cancel_button"
+        android:layout_width="118dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="140dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/book_popup_confirm_button"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <Button
+        android:id="@+id/place_popup_confirm_button"
+        android:layout_width="124dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="144dp"
+        android:text="ConFirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.412" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

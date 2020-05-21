@@ -11,13 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".first_list_setting_popup"
-            android:theme="@style/Theme.AppCompat.Light.Dialog"></activity>
+        <activity android:name=".presentation_popup"></activity>
+        <activity android:name=".book_popup" />
+        <activity android:name=".place_popup" />
+        <activity
+            android:name=".first_list_setting_popup"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
         <activity
             android:name=".calendar_popup"
             android:theme="@style/Theme.AppCompat.Light.Dialog" />
-        <activity
-            android:name=".MenuActivity">
+        <activity android:name=".MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
