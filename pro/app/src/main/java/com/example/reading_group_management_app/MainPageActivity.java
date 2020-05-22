@@ -97,7 +97,7 @@ public class MainPageActivity extends AppCompatActivity {
 
 
             case R.id.mygroup_menu:
-                Toast.makeText(this, "내 그 보기로 이동", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "내 그룹 보기로 이동", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.logout_menu:
                 Toast.makeText(this, "로그아웃 실행", Toast.LENGTH_SHORT).show();

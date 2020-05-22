@@ -10,6 +10,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class MenuActivity extends AppCompatActivity {
 
     @Override
@@ -20,6 +21,7 @@ public class MenuActivity extends AppCompatActivity {
         Button loginBtn = (Button)findViewById(R.id.login_btn);
         Button mainpageBtn = (Button)findViewById(R.id.mainpage_btn);
         Button listSettingBtn = (Button)findViewById(R.id.list_setting_btn);
+        Button presentationBtn = (Button)findViewById(R.id.presentation_btn);
 
         mainpageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +42,13 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(getApplicationContext(), first_list_setting_popup.class);
+                startActivity(intent);
+            }
+        });
+        presentationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(), Presentation1Activity.class);
                 startActivity(intent);
             }
         });

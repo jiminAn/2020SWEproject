@@ -34,9 +34,9 @@
             android:text="모임 설정 화면" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/presentation_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="발제1 화면 " />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

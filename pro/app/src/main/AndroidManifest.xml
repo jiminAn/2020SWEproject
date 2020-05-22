@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".presentation_popup"></activity>
+        <activity android:name=".Presentation1Activity"></activity>
+        <activity android:name=".presentation_popup" />
         <activity android:name=".book_popup" />
         <activity android:name=".place_popup" />
         <activity
