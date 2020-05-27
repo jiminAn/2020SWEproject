@@ -45,5 +45,17 @@
             android:layout_height="wrap_content"
             android:text="non_member_group_home 화면 " />
 
+        <Button
+            android:id="@+id/button_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="공지사항" />
+
+        <Button
+            android:id="@+id/button_speechlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="발제문" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

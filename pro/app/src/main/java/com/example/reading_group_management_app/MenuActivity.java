@@ -23,6 +23,8 @@ public class MenuActivity extends AppCompatActivity {
         Button listSettingBtn = (Button)findViewById(R.id.list_setting_btn);
         Button presentationBtn = (Button)findViewById(R.id.presentation_btn);
         Button non_member_group_homeBtn = (Button)findViewById(R.id.non_member_group_home_btn);
+        Button noteBtn = (Button)findViewById(R.id.button_note);
+        Button speechBtn = (Button)findViewById(R.id.button_speechlist);
 
         mainpageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +59,20 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(getApplicationContext(), non_member_group_home.class);
+                startActivity(intent);
+            }
+        });
+        noteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), NotificationList.class);
+                startActivity(intent);
+            }
+        });
+        speechBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), FirstListInfor.class);
                 startActivity(intent);
             }
         });
