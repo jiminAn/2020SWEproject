@@ -132,18 +132,13 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:text="성별제한없음"></TextView>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:text="남자만 모집"></TextView>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:text="여자만 모집"></TextView>
+            <Spinner
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:id="@+id/sexSpinner"
+                android:entries="@array/sexSpinner"></Spinner>
+
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
